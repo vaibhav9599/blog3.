@@ -15,7 +15,7 @@ from wtforms import StringField,SubmitField,PasswordField
 from wtforms.validators import DataRequired
 from flask_wtf import FlaskForm
 login_manager=LoginManager()
-app = Flask(__name__)
+app = Flask(__name__, template_folder='template')
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 ckeditor = CKEditor(app)
 Bootstrap(app)
